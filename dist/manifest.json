@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Ultimate Scraper",
+  "version": "1.0.0.0",
+  "version_name": "1.0.0",
+  "action": {
+    "default_title": "Ultimate Scraper"
+  },
+  "side_panel": {
+    "default_path": "src/sidepanel.html"
+  },
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content.ts-z_COef9G.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "assets/content.ts-z_COef9G.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+console.log("Ultimate Scraper Background Service Worker Loaded");chrome.runtime.onInstalled.addListener(()=>{console.log("Extension Installed"),chrome.sidePanel.setPanelBehavior({openPanelOnActionClick:!0}).catch(e=>console.error(e))});

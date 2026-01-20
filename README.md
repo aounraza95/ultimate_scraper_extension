@@ -4,7 +4,6 @@
 
 Ultimate Scraper is a powerful Chrome Extension designed to make web scraping accessible, robust, and "infinite". It handles complex dynamic websites, virtual scrolling, and structural changes with ease, all from a modern React-based Side Panel identity.
 
-![Ultimate Scraper Hero](landing-page/public/hero-preview.png)
 
 ## Features
 
